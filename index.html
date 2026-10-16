@@ -3,45 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
+    <meta name="description" content="Help fund clean water, one small donation at a time.">
+    <title>Make a Ripple | charity: water</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
+    <!-- The header keeps the logo and impact link easy to find. -->
+    <header class="site-header">
+        <a class="brand" href="./index.html" aria-label="charity: water home">
+            <img src="img/cw_logo-2.png" alt="charity: water">
+        </a>
+        <a class="impact-link" href="#impact">See the impact</a>
+    </header>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
+    <main>
+        <!-- The main section introduces the small-donation idea. -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <h1 id="hero-title">The world is loud. Your impact can be clear.</h1>
+                <p>You don’t have to change everything to change something. Help fund clean water, one small donation at a time.</p>
+                <a class="donate-button" href="https://www.charitywater.org/">Make a ripple. Give $5.</a>
+            </div>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
-        </div>
-    </section>
+            <!-- These local photos show the importance of access to clean water. -->
+            <div class="hero-photos">
+                <img src="img/child-with-water.jpg" alt="A child in a red dress smiles while holding a glass of water outdoors.">
+                <img src="img/water-tap.jpg" alt="Water flows from a tap into a yellow jerrycan.">
+            </div>
+        </section>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+        <!-- The header link above scrolls to this impact section. -->
+        <section class="impact" id="impact" aria-labelledby="impact-title">
+            <h2 id="impact-title">A SMALL GIFT. A REAL BEGINNING.</h2>
+            <p class="impact-lead">Clean water creates more time for school, work, and life.</p>
+            <p>100% of public donations fund clean water projects.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Independent student project.</p>
+    </footer>
 </body>
 </html>
